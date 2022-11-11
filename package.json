@@ -1,0 +1,39 @@
+{
+  "name": "nri-3-sprint.api-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint --fix --ext .js .",
+    "test": "mocha spec && yarn lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-ide49/nri-3-sprint.api-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-ide49/nri-3-sprint.api-project/issues"
+  },
+  "homepage": "https://github.com/s-ide49/nri-3-sprint.api-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-problems": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "yarn": "^1.22.19"
+  }
+}
