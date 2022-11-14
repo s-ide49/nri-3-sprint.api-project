@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/index.js",
     "lint": "eslint --fix --ext .js .",
-    "test": "mocha spec && yarn lint"
+    "migrate": "knex migrate:latest",
+    "test": "mocha test --exit && yarn lint"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,14 @@
   },
   "homepage": "https://github.com/s-ide49/nri-3-sprint.api-project#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "i": "^0.3.7",
+    "knex": "^2.3.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0",
+    "validation": "0.0.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
